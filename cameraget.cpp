@@ -1,5 +1,6 @@
 #include "cameraget.h"
 #include <QDebug>
+//using namespace QWidge
 
 cameraGet::cameraGet(QString dev_name)
 {
@@ -30,7 +31,7 @@ return 0;
 
 int cameraGet::close_device()
 {
-if(-1 == close(fd))
+if(::close(fd) == -1)
 {
 emit display_error(tr("close: %1").arg(QString(strerror(errno))));
 return -1;

@@ -18,7 +18,7 @@ int au_decode::decode_open()
 {
     avcodec_register_all();
 
-    pCodec = avcodec_find_decoder(CODEC_ID_AAC);
+    pCodec = avcodec_find_decoder(AV_CODEC_ID_AAC);
     if (!pCodec)
     {
         qDebug()<<"--- AAC codec not found\n";

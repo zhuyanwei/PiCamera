@@ -141,18 +141,19 @@ HEADERS  += cameraget.h \
 FORMS    += widget.ui \
     video.ui
 
-INCLUDEPATH+= /usr/local/include/opencv \
-/usr/local/ffmpeg/include \
+INCLUDEPATH+= /usr/include/opencv \
+/usr/local/FFMpeg/include \
 /usr/local/portaudio/include \
 #/usr/local/include/jrtplib3 \
 
-LIBS+=/usr/local/lib/libopencv_core.so \
-/usr/local/lib/libopencv_highgui.so \
- /usr/local/ffmpeg/lib/libavformat.so \
-/usr/local/ffmpeg/lib/libavcodec.so \
-/usr/local/ffmpeg/lib/libavutil.so\
-/usr/local/ffmpeg/lib/libswscale.so \
-/usr/local/ffmpeg/lib/libswresample.so \
+LIBS+=/usr/lib/arm-linux-gnueabihf/libopencv_core.so \
+/usr/lib/arm-linux-gnueabihf/libopencv_highgui.so \
+ /usr/local/FFMpeg/lib/libavformat.so \
+/usr/local/FFMpeg/lib/libavcodec.so \
+/usr/local/FFMpeg/lib/libavutil.so\
+/usr/local/FFMpeg/lib/libswscale.so \
+/usr/local/FFMpeg/lib/libswresample.so \
+/usr/local/FFMpeg/lib/libswresample.so.1 \
 /usr/local/lib/libjrtp.so \
-/usr/local/portaudio/lib/libportaudio.so.2 \
+/usr/lib/arm-linux-gnueabihf/libportaudio.so.2 \
 

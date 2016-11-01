@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <unistd.h>
 
 #include "comdef.h"
 #include <sys/ioctl.h>
@@ -15,6 +16,7 @@
 
 #include <QString>
 #include <QObject>
+
 
 
 class cameraGet : public QObject

@@ -16,7 +16,7 @@ int decode::decode_open()
 //    avcodec_init();
     avcodec_register_all();
     /* find the mpeg1 video decoder */
-    codec = avcodec_find_decoder(CODEC_ID_H264);
+    codec = avcodec_find_decoder(AV_CODEC_ID_H264);
     if (!codec)
     {
         fprintf(stderr, "codec not found\n");
@@ -228,7 +228,7 @@ void decode::IplImage_to_AVFrame(IplImage* iplImage, AVFrame* avFrame, int frame
 {
     struct SwsContext * img_convert_ctx = 0;
     int linesize[4] = {0, 0, 0, 0};
-    img_convert_ctx = sws_getContext(iplImage->width, iplImage->height,PIX_FMT_BGR24,frameWidth,frameHeight,PIX_FMT_YUV420P, SWS_BICUBIC, 0, 0, 0);
+    img_convert_ctx = sws_getContext(iplImage->width, iplImage->height,AV_PIX_FMT_BGR24,frameWidth,frameHeight,AV_PIX_FMT_YUV420P, SWS_BICUBIC, 0, 0, 0);
     if (img_convert_ctx != 0)
     {
         linesize[0] = 3 * iplImage->width;
