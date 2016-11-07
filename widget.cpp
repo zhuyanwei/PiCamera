@@ -6,10 +6,11 @@ Widget::Widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Widget)
 {
+    this->setAttribute(Qt::WA_PaintOutsidePaintEvent);
     ui->setupUi(this);
 
     pp = (unsigned char *)malloc(WIDTH * HEIGHT/*QWidget::width()*QWidget::height()*/* 3 * sizeof(char));
-    painter = new QPainter(this);
+    //painter = new QPainter(this);
     frame = new QImage(pp,WIDTH,HEIGHT,QImage::Format_RGB888);
 
     timer = new QTimer(this);

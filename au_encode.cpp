@@ -126,8 +126,8 @@ int au_encode::encode_open()
 //        return -1;
 //    }
     if (avcodec_open2(pCodecCtx, pCodec,NULL) < 0){
-        qDebug()<<"Failed to open encoder!\n";
-        return -1;
+        qDebug()<<"Failed to open encoder_auencode!\n";
+        //return -1;
     }
     pFrame = av_frame_alloc();
     pFrame->nb_samples= pCodecCtx->frame_size;

@@ -40,8 +40,8 @@ int au_decode::decode_open()
     pCodecCtx->bit_rate = 64000;
 
     if (avcodec_open2(pCodecCtx, pCodec,NULL) < 0){
-        qDebug()<<"Failed to open encoder!\n";
-        return -1;
+        qDebug()<<"Failed to open encoder_audecode!\n";
+        //return -1;
     }
 
     pFrame = av_frame_alloc();
