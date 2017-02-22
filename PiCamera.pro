@@ -76,62 +76,6 @@ HEADERS  += cameraget.h \
     decode.h \
     rtpreceive.h \
     camerathread.h \
-#    src/rtpudpv6transmitter.h \
-#    src/rtpudpv4transmitter.h \
-#    src/rtptypes.h \
-#    src/rtptypes_win.h \
-#    src/rtptransmitter.h \
-#    src/rtptimeutilities.h \
-#    src/rtpstructs.h \
-#    src/rtpsources.h \
-#    src/rtpsourcedata.h \
-#    src/rtpsessionsources.h \
-#    src/rtpsessionparams.h \
-#    src/rtpsession.h \
-#    src/rtprawpacket.h \
-#    src/rtprandomurandom.h \
-#    src/rtprandomrands.h \
-#    src/rtprandomrand48.h \
-#    src/rtprandom.h \
-#    src/rtppollthread.h \
-#    src/rtppacketbuilder.h \
-#    src/rtppacket.h \
-#    src/rtpmemoryobject.h \
-#    src/rtpmemorymanager.h \
-#    src/rtplibraryversion.h \
-#    src/rtpkeyhashtable.h \
-#    src/rtpipv6destination.h \
-#    src/rtpipv6address.h \
-#    src/rtpipv4destination.h \
-#    src/rtpipv4address.h \
-#    src/rtpinternalsourcedata.h \
-#    src/rtphashtable.h \
-#    src/rtpexternaltransmitter.h \
-#    src/rtperrors.h \
-#    src/rtpdefines.h \
-#    src/rtpdebug.h \
-#    src/rtpconfig.h.in \
-#    src/rtpconfig.h \
-#    src/rtpcollisionlist.h \
-#    src/rtpbyteaddress.h \
-#    src/rtpaddress.h \
-#    src/rtcpunknownpacket.h \
-#    src/rtcpsrpacket.h \
-#    src/rtcpsdespacket.h \
-#    src/rtcpsdesinfo.h \
-#    src/rtcpscheduler.h \
-#    src/rtcprrpacket.h \
-#    src/rtcppacketbuilder.h \
-#    src/rtcppacket.h \
-#    src/rtcpcompoundpacketbuilder.h \
-#    src/rtcpcompoundpacket.h \
-#    src/rtcpbyepacket.h \
-#    src/rtcpapppacket.h \
-#    src/jthreadconfig.h.in \
-#    src/jthreadconfig.h \
-#    src/jthread.h \
-#    src/jmutexautolock.h \
-#    src/jmutex.h
     video.h \
     audiothread.h \
     audioget.h \
@@ -141,7 +85,7 @@ HEADERS  += cameraget.h \
 FORMS    += widget.ui \
     video.ui
 
-INCLUDEPATH+= /usr/include/opencv \
+INCLUDEPATH+= /usr/include/ \
 /usr/local/FFMpeg/include \
 /usr/local/portaudio/include \
 #/usr/local/include/jrtplib3 \
@@ -154,6 +98,6 @@ LIBS+=/usr/lib/arm-linux-gnueabihf/libopencv_core.so \
 /usr/local/FFMpeg/lib/libswscale.so \
 /usr/local/FFMpeg/lib/libswresample.so \
 /usr/local/FFMpeg/lib/libswresample.so.1 \
-/usr/local/lib/libjrtp.so \
+#/usr/local/JRtp/lib/libjrtp.so \
 /usr/lib/arm-linux-gnueabihf/libportaudio.so.2 \
 

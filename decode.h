@@ -24,8 +24,8 @@ extern "C"{
 #include <QObject>
 #include <assert.h>
 
-#include <highgui.h>  //包含opencv库头文件
-#include <cv.h>
+#include <opencv2/highgui/highgui_c.h>  //包含opencv库头文件
+#include <opencv/cv.h>
 
 #define  WIDTH 320
 #define  HEIGHT 240

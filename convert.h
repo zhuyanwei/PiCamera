@@ -23,8 +23,8 @@ extern "C"{
 #include <QObject>
 #include <assert.h>
 
-#include <highgui.h>  //包含opencv库头文件
-#include <cv.h>
+//#include <highgui.h>  //包含opencv库头文件
+//#include <cv.h>
 
 class convert : public QObject
 {
